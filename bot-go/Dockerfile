@@ -9,7 +9,7 @@ ADD . $SRC_DIR
 # Build it:
 RUN cd $SRC_DIR; ls -ltr
 RUN go get github.com/spf13/viper
-RUN cd $SRC_DIR; go build -o bot ./bot; 
+RUN cd $SRC_DIR; go build -o bot bot; 
 
 FROM alpine:latest
 WORKDIR /app
